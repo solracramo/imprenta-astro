@@ -1,0 +1,22 @@
+---
+const opciones=[
+{title:"Servicios",url:"/servicios"},
+{title:"Trabajos",url:"/servicios"},
+{title:"Acerca",url:"/servicios"},
+{title:"Contactos",url:"/servicios"},
+]
+
+---
+
+<div class="flex flex-row gap-4 font-bold">
+      {
+      opciones.map((opcion) =>(
+      <div>
+      <ul>
+        <li><a href={opcion.url}>{opcion.title}</a></li>
+      </ul>
+      </div>
+      ))
+      }
+    </div>
+

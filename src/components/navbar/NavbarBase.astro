@@ -1,0 +1,15 @@
+---
+import CustomButton from '../CustomButton.astro'
+import NavbarMenu from '../navbar/NavbarMenu.astro'
+import NavbarLogo from '../navbar/NavbarLogo.astro'
+---
+
+<nav>
+  <div class="flex flex-row items-center justify-between bg-slate-800 p-4 shadow-lg">
+    <NavbarLogo wsize={50} hsize={50} />
+    <NavbarMenu />
+    <div>
+      <CustomButton name="Ingreso" url="/servicios" />
+  </div>
+  </div>
+</nav>
